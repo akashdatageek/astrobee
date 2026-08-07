@@ -57,6 +57,36 @@
       <pose>11.947 -9.252 5.045 0 0 3.1415</pose>
     </include>
 
+    <include>
+      <uri>model://astrobee_cargo_box</uri>
+      <name>cargo_box_1</name>
+      <pose>10.9 -8.6 3.95 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://astrobee_cargo_box</uri>
+      <name>cargo_box_2</name>
+      <pose>10.9 -8.3 3.95 0 0 0.4</pose>
+    </include>
+
+    <include>
+      <uri>model://astrobee_cargo_box</uri>
+      <name>cargo_box_3</name>
+      <pose>10.9 -8.0 3.95 0 0 -0.3</pose>
+    </include>
+
+    <include>
+      <uri>model://astrobee_cargo_box</uri>
+      <name>cargo_box_4</name>
+      <pose>11.6 -6.2 3.95 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://astrobee_cargo_box</uri>
+      <name>cargo_box_5</name>
+      <pose>11.6 -6.2 4.16 0 0 0.785</pose>
+    </include>
+
     <light name='user_point_light_px' type='point'>
       <pose frame=''>30 0 0 0 -0 0</pose>
       <diffuse>0.5 0.5 0.5 1</diffuse>
