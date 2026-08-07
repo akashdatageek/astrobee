@@ -1,0 +1,8 @@
+# Names of the two models and links to weld together (or release)
+string model_1
+string link_1
+string model_2
+string link_2
+---
+bool ok
+string message

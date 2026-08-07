@@ -166,5 +166,6 @@
       <direction>0 0 -1</direction>
     </light>
     <plugin name="plugin_speed" filename="libgazebo_world_plugin_speed.so"/>
+    <plugin name="cargo_box_attacher" filename="libgazebo_world_plugin_cargo_attacher.so"/>
   </world>
 </sdf>
