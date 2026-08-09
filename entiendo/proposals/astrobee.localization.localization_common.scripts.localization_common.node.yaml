@@ -1,0 +1,33 @@
+# PROPOSED by `ent retrofit` — confidence: medium
+# target: localization/localization_common/scripts/localization_common/entiendo.node.yaml
+# note: no single obvious entrypoint — set contract.entrypoint by hand
+# note: owner, contract, and evals are stubs — review before accepting
+# note: boundary-uncertain: no candidate fixture -> expected verdict yet; supply one before accepting (the law)
+apiVersion: entiendo/v1
+kind: Node
+id: astrobee.localization.localization_common.scripts.localization_common
+name: localization_common
+task: 'TODO: state in one sentence what astrobee.localization.localization_common.scripts.localization_common
+  is for (retrofit inferred this boundary)'
+nodeKind: compute
+group: astrobee
+owner: TODO
+status: experimental
+claims:
+- localization/localization_common/scripts/localization_common/__init__.py
+- localization/localization_common/scripts/localization_common/utilities.py
+contract:
+  invariants: []
+  sideEffects: none
+dependencies:
+  calls: []
+  reads: []
+  writes: []
+  config: []
+evals:
+  tier0:
+  - type: invariant_check
+observability:
+  spanName: astrobee.localization.localization_common.scripts.localization_common
+approval:
+  required: false

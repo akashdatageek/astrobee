@@ -1,0 +1,32 @@
+# PROPOSED by `ent retrofit` — confidence: medium
+# target: localization/marker_tracking/tools/marker_tracking_node/entiendo.node.yaml
+# note: no single obvious entrypoint — set contract.entrypoint by hand
+# note: owner, contract, and evals are stubs — review before accepting
+# note: boundary-uncertain: no candidate fixture -> expected verdict yet; supply one before accepting (the law)
+apiVersion: entiendo/v1
+kind: Node
+id: astrobee.localization.marker_tracking.tools.marker_tracking_node
+name: marker_tracking_node
+task: 'TODO: state in one sentence what astrobee.localization.marker_tracking.tools.marker_tracking_node
+  is for (retrofit inferred this boundary)'
+nodeKind: compute
+group: astrobee
+owner: TODO
+status: experimental
+claims:
+- localization/marker_tracking/tools/marker_tracking_node/features_counter.py
+contract:
+  invariants: []
+  sideEffects: none
+dependencies:
+  calls: []
+  reads: []
+  writes: []
+  config: []
+evals:
+  tier0:
+  - type: invariant_check
+observability:
+  spanName: astrobee.localization.marker_tracking.tools.marker_tracking_node
+approval:
+  required: false

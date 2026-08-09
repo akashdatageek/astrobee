@@ -1,0 +1,37 @@
+# PROPOSED by `ent retrofit` — confidence: high
+# target: tools/gnc_visualizer/scripts/communications/entiendo.node.yaml
+# note: owner, contract, and evals are stubs — review before accepting
+# note: boundary-uncertain: no candidate fixture -> expected verdict yet; supply one before accepting (the law)
+apiVersion: entiendo/v1
+kind: Node
+id: astrobee.tools.gnc_visualizer.scripts.communications
+name: communications
+task: 'TODO: state in one sentence what astrobee.tools.gnc_visualizer.scripts.communications
+  is for (retrofit inferred this boundary)'
+nodeKind: compute
+group: astrobee
+owner: TODO
+status: experimental
+claims:
+- tools/gnc_visualizer/scripts/communications/com_manager.py
+- tools/gnc_visualizer/scripts/communications/config.ini
+- tools/gnc_visualizer/scripts/communications/configuration_support.py
+- tools/gnc_visualizer/scripts/communications/data_support.py
+- tools/gnc_visualizer/scripts/communications/dds_support.py
+- tools/gnc_visualizer/scripts/communications/ros_support.py
+contract:
+  entrypoint: tools/gnc_visualizer/scripts/communications/data_support.py::todict
+  invariants: []
+  sideEffects: none
+dependencies:
+  calls: []
+  reads: []
+  writes: []
+  config: []
+evals:
+  tier0:
+  - type: invariant_check
+observability:
+  spanName: astrobee.tools.gnc_visualizer.scripts.communications
+approval:
+  required: false

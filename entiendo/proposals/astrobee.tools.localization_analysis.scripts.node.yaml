@@ -1,0 +1,56 @@
+# PROPOSED by `ent retrofit` — confidence: high
+# target: tools/localization_analysis/scripts/entiendo.node.yaml
+# note: owner, contract, and evals are stubs — review before accepting
+# note: boundary-uncertain: no candidate fixture -> expected verdict yet; supply one before accepting (the law)
+apiVersion: entiendo/v1
+kind: Node
+id: astrobee.tools.localization_analysis.scripts
+name: scripts
+task: 'TODO: state in one sentence what astrobee.tools.localization_analysis.scripts
+  is for (retrofit inferred this boundary)'
+nodeKind: compute
+group: astrobee
+owner: TODO
+status: experimental
+claims:
+- tools/localization_analysis/scripts/bag_and_parameter_sweeper.py
+- tools/localization_analysis/scripts/bag_sweeper.py
+- tools/localization_analysis/scripts/config_creator.py
+- tools/localization_analysis/scripts/depth_odometry_parameter_sweep.py
+- tools/localization_analysis/scripts/depth_odometry_results_plotter.py
+- tools/localization_analysis/scripts/groundtruth_sweep.py
+- tools/localization_analysis/scripts/imu_analyzer.py
+- tools/localization_analysis/scripts/loc_results_plotter.py
+- tools/localization_analysis/scripts/make_groundtruth.py
+- tools/localization_analysis/scripts/make_map.py
+- tools/localization_analysis/scripts/message_conversions.py
+- tools/localization_analysis/scripts/message_reader.py
+- tools/localization_analysis/scripts/parameter_sweep_results_plotter.py
+- tools/localization_analysis/scripts/parameter_sweep_utilities.py
+- tools/localization_analysis/scripts/parameter_sweeper.py
+- tools/localization_analysis/scripts/plot_conversions.py
+- tools/localization_analysis/scripts/plot_helpers.py
+- tools/localization_analysis/scripts/plotters.py
+- tools/localization_analysis/scripts/results_averager.py
+- tools/localization_analysis/scripts/results_savers.py
+- tools/localization_analysis/scripts/rmse_calculators.py
+- tools/localization_analysis/scripts/run_offline_replay_and_plot_results.py
+- tools/localization_analysis/scripts/states.py
+- tools/localization_analysis/scripts/test_rmse_calculators.py
+- tools/localization_analysis/scripts/vio_results_plotter.py
+contract:
+  entrypoint: tools/localization_analysis/scripts/make_map.py::make_map
+  invariants: []
+  sideEffects: none
+dependencies:
+  calls: []
+  reads: []
+  writes: []
+  config: []
+evals:
+  tier0:
+  - type: invariant_check
+observability:
+  spanName: astrobee.tools.localization_analysis.scripts
+approval:
+  required: false
