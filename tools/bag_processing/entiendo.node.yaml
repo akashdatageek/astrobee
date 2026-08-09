@@ -1,8 +1,3 @@
-# PROPOSED by `ent retrofit` — confidence: medium
-# target: tools/bag_processing/entiendo.node.yaml
-# note: no single obvious entrypoint — set contract.entrypoint by hand
-# note: owner, contract, and evals are stubs — review before accepting
-# note: boundary-uncertain: no candidate fixture -> expected verdict yet; supply one before accepting (the law)
 apiVersion: entiendo/v1
 kind: Node
 id: astrobee.tools.bag_processing
