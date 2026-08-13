@@ -1,0 +1,2 @@
+{"name": "out-of-order numeric dirs become sequential from 0", "input": {"dirs": ["5", "2", "9"]}, "expect": ["0", "1", "2"]}
+{"name": "the invalid dir is left alone, the rest renumber", "input": {"dirs": ["3", "1", "invalid"]}, "expect": ["0", "1", "invalid"]}

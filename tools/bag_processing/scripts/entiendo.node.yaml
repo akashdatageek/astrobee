@@ -36,6 +36,10 @@ dependencies:
   writes: []
   config: []
 evals:
+  # every runnable path here needs a ROS runtime (rosbag/cv2) or shells out
+  # to make over .bag files — not judgeable outside ROS, so tier0 is skipped
+  # rather than left to fail at import
+  executionMode: skip
   tier0:
   - type: invariant_check
 observability:

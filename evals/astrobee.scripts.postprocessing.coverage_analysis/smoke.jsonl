@@ -1,0 +1,2 @@
+{"name": "one cube per bin gives an even 20% distribution", "input": {"featuresPerCube": [0, 5, 15, 30, 100]}, "expect": ["", 20.0, 20.0, 20.0, 20.0, 20.0, 150.0]}
+{"name": "boundary counts: 40 lands in the 21-40 bin, 41 in the 40+ bin", "input": {"featuresPerCube": [40, 41]}, "expect": ["", 0.0, 0.0, 0.0, 50.0, 50.0, 81.0]}

@@ -35,7 +35,8 @@ claims:
 - tools/localization_analysis/scripts/test_rmse_calculators.py
 - tools/localization_analysis/scripts/vio_results_plotter.py
 contract:
-  entrypoint: tools/localization_analysis/scripts/make_map.py::make_map
+  entrypoint: tools/localization_analysis/scripts/config_creator.py::check_and_fill_line
+  harness: evals/astrobee.tools.localization_analysis.scripts/harness.py::fill_config_line
   invariants: []
   sideEffects: none
 dependencies:
@@ -46,6 +47,8 @@ dependencies:
 evals:
   tier0:
   - type: invariant_check
+  - type: smoke
+    fixture: evals/astrobee.tools.localization_analysis.scripts/smoke.jsonl
 observability:
   spanName: astrobee.tools.localization_analysis.scripts
 approval:

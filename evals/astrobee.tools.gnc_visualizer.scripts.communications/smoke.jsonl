@@ -1,0 +1,4 @@
+{"name": "scalars pass through untouched", "input": 5, "expect": 5}
+{"name": "lists convert element-wise", "input": [1, 2, 3], "expect": [1, 2, 3]}
+{"name": "nested lists convert recursively", "input": [[1, 2], [3]], "expect": [[1, 2], [3]]}
+{"name": "a string input recurses forever - the py2 iteritems relic, pinned so a py3 port shows up as a diff here", "input": "abc", "expectError": "RecursionError"}
