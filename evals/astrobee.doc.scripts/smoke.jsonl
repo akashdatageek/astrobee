@@ -1,0 +1,4 @@
+{"name": "a variable line becomes a doxygen table row", "input": "# header comment\nstring name # the name\n", "expect": "| string | `name` | the name |\n"}
+{"name": "a constant line is bolded with its value", "input": "uint8 SUCCESS = 1 # ok\n", "expect": "| uint8 | **SUCCESS = 1** | ok |\n"}
+{"name": "ff_msgs types are cross-linked", "input": "ff_msgs/AgentStateStamped agent # state\n", "expect": "| <a href=\"./group__ff__msgs__AgentStateStamped.html\">ff_msgs/AgentStateStamped</a> | `agent` | state |\n"}
+{"name": "an empty message yields the empty table", "input": "", "expect": "| | | |"}

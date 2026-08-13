@@ -13,7 +13,7 @@ claims:
 - tools/bag_processing/scripts/utilities/bmr_renumber_enum.py
 - tools/bag_processing/scripts/utilities/utilities.py
 contract:
-  entrypoint: tools/bag_processing/scripts/utilities/utilities.py::get_topic_rates
+  entrypoint: tools/bag_processing/scripts/utilities/bmr_renumber_enum.py::field_enum_from_msg_text
   invariants: []
   sideEffects: none
 dependencies:
@@ -24,6 +24,8 @@ dependencies:
 evals:
   tier0:
   - type: invariant_check
+  - type: smoke
+    fixture: evals/astrobee.tools.bag_processing.scripts.utilities/smoke.jsonl
 observability:
   spanName: astrobee.tools.bag_processing.scripts.utilities
 approval:

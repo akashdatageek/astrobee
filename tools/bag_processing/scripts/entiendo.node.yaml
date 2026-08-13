@@ -31,11 +31,18 @@ contract:
   invariants: []
   sideEffects: none
 dependencies:
-  calls: []
+  calls:
+  - astrobee.localization.localization_common.scripts.localization_common
+  - astrobee.tools.bag_processing.scripts.utilities
+  - astrobee.tools.bag_processing.src.bag_processing
   reads: []
   writes: []
   config: []
 evals:
+  # every runnable path here needs a ROS runtime (rosbag/cv2) or shells out
+  # to make over .bag files — not judgeable outside ROS, so tier0 is skipped
+  # rather than left to fail at import
+  executionMode: skip
   tier0:
   - type: invariant_check
 observability:

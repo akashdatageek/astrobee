@@ -16,7 +16,8 @@ claims:
 - scripts/postprocessing/coverage_analysis/coverage_stats_reporter.py
 - scripts/postprocessing/coverage_analysis/img_to_bag.py
 contract:
-  entrypoint: scripts/postprocessing/coverage_analysis/coverage_analyzer.py::main
+  entrypoint: scripts/postprocessing/coverage_analysis/coverage_stats_reporter.py::Coverage_StatsReporter
+  harness: evals/astrobee.scripts.postprocessing.coverage_analysis/harness.py::drive_wall_coverage
   invariants: []
   sideEffects: none
 dependencies:
@@ -27,6 +28,8 @@ dependencies:
 evals:
   tier0:
   - type: invariant_check
+  - type: smoke
+    fixture: evals/astrobee.scripts.postprocessing.coverage_analysis/smoke.jsonl
 observability:
   spanName: astrobee.scripts.postprocessing.coverage_analysis
 approval:

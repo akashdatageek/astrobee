@@ -1,0 +1,3 @@
+{"name": "a transform assignment is located with balanced parens", "input": {"text": "-- nav cam extrinsics\nnav_cam_transform = transform((vec3(0.5, -0.4, 0.1), quat4(0.5, 0.5, -0.5, 0.5)))\nother = 3\n", "name": "nav_cam_transform"}, "expect": "((vec3(0.5, -0.4, 0.1), quat4(0.5, 0.5, -0.5, 0.5)))"}
+{"name": "a commented-out transform does not match", "input": {"text": "-- nav_cam_transform = transform((vec3(1, 2, 3), quat4(0, 0, 0, 1)))\n", "name": "nav_cam_transform"}, "expect": null}
+{"name": "a missing transform name returns nothing", "input": {"text": "dock_cam_transform = transform((vec3(1, 2, 3), quat4(0, 0, 0, 1)))\n", "name": "nav_cam_transform"}, "expect": null}

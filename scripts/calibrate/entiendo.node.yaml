@@ -14,7 +14,8 @@ claims:
 - scripts/calibrate/intrinsics_calibrate.py
 - scripts/calibrate/markers_to_Kalibr.py
 contract:
-  entrypoint: scripts/calibrate/markers_to_Kalibr.py::main
+  entrypoint: scripts/calibrate/calibration_utils.py::lua_find_transform
+  harness: evals/astrobee.scripts.calibrate/harness.py::match_lua_transform
   invariants: []
   sideEffects: none
 dependencies:
@@ -25,6 +26,8 @@ dependencies:
 evals:
   tier0:
   - type: invariant_check
+  - type: smoke
+    fixture: evals/astrobee.scripts.calibrate/smoke.jsonl
 observability:
   spanName: astrobee.scripts.calibrate
 approval:

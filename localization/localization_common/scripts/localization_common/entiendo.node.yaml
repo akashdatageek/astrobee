@@ -12,6 +12,7 @@ claims:
 - localization/localization_common/scripts/localization_common/__init__.py
 - localization/localization_common/scripts/localization_common/utilities.py
 contract:
+  entrypoint: localization/localization_common/scripts/localization_common/utilities.py::basename
   invariants: []
   sideEffects: none
 dependencies:
@@ -22,6 +23,8 @@ dependencies:
 evals:
   tier0:
   - type: invariant_check
+  - type: smoke
+    fixture: evals/astrobee.localization.localization_common.scripts.localization_common/smoke.jsonl
 observability:
   spanName: astrobee.localization.localization_common.scripts.localization_common
 approval:

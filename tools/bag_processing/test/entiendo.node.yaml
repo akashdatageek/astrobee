@@ -14,7 +14,8 @@ contract:
   invariants: []
   sideEffects: none
 dependencies:
-  calls: []
+  calls:
+  - astrobee.tools.bag_processing.src.bag_processing
   reads: []
   writes: []
   config: []

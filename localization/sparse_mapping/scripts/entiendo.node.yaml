@@ -16,17 +16,21 @@ claims:
 - localization/sparse_mapping/scripts/process_sequential_images.py
 - localization/sparse_mapping/scripts/prune_partitioned_directories.py
 contract:
-  entrypoint: localization/sparse_mapping/scripts/make_surf_map.py::make_surf_map
+  entrypoint: localization/sparse_mapping/scripts/prune_partitioned_directories.py::reorder_directories
+  harness: evals/astrobee.localization.sparse_mapping.scripts/harness.py::reorder_in_tempdir
   invariants: []
   sideEffects: none
 dependencies:
-  calls: []
+  calls:
+  - astrobee.localization.localization_common.scripts.localization_common
   reads: []
   writes: []
   config: []
 evals:
   tier0:
   - type: invariant_check
+  - type: smoke
+    fixture: evals/astrobee.localization.sparse_mapping.scripts/smoke.jsonl
 observability:
   spanName: astrobee.localization.sparse_mapping.scripts
 approval:

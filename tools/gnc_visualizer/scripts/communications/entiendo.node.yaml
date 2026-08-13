@@ -26,6 +26,8 @@ dependencies:
 evals:
   tier0:
   - type: invariant_check
+  - type: smoke
+    fixture: evals/astrobee.tools.gnc_visualizer.scripts.communications/smoke.jsonl
 observability:
   spanName: astrobee.tools.gnc_visualizer.scripts.communications
 approval:
