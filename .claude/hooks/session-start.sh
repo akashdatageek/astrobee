@@ -15,3 +15,7 @@ pip install --quiet --ignore-installed pyjwt cffi cryptography
 # entiendo 0.2.0 uses the mcp.server.fastmcp API, which mcp 2.x removed,
 # so hold mcp at 1.x.
 pip install --quiet "entiendo[mcp]==0.2.0" "mcp>=1.0,<2"
+
+# Needed by several Python units' entrypoints so `ent eval` / `ent ci`
+# can import-check them (ROS packages like rosbag/tf stay unavailable).
+pip install --quiet numpy matplotlib
