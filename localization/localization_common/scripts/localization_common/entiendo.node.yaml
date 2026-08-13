@@ -1,0 +1,28 @@
+apiVersion: entiendo/v1
+kind: Node
+id: astrobee.localization.localization_common.scripts.localization_common
+name: localization_common
+task: Shared Python utilities (pose loading, transforms, plotting helpers) used across
+  localization analysis scripts.
+nodeKind: compute
+group: astrobee
+owner: akashdatageek
+status: experimental
+claims:
+- localization/localization_common/scripts/localization_common/__init__.py
+- localization/localization_common/scripts/localization_common/utilities.py
+contract:
+  invariants: []
+  sideEffects: none
+dependencies:
+  calls: []
+  reads: []
+  writes: []
+  config: []
+evals:
+  tier0:
+  - type: invariant_check
+observability:
+  spanName: astrobee.localization.localization_common.scripts.localization_common
+approval:
+  required: false

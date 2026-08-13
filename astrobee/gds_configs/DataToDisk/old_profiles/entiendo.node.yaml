@@ -1,0 +1,47 @@
+apiVersion: entiendo/v1
+kind: Node
+id: astrobee.astrobee.gds_configs.datatodisk.old_profiles
+name: old_profiles
+task: Archives legacy data-to-disk recording profiles kept for reference to past ISS
+  activities.
+nodeKind: config
+group: astrobee
+owner: akashdatageek
+status: experimental
+claims:
+- astrobee/gds_configs/DataToDisk/old_profiles/aft_extrinsics.json
+- astrobee/gds_configs/DataToDisk/old_profiles/all_sensors.json
+- astrobee/gds_configs/DataToDisk/old_profiles/dock_full_frame_rate.json
+- astrobee/gds_configs/DataToDisk/old_profiles/dock_low_frame_rate.json
+- astrobee/gds_configs/DataToDisk/old_profiles/dockcam_intrinsics.json
+- astrobee/gds_configs/DataToDisk/old_profiles/front_extrinsics.json
+- astrobee/gds_configs/DataToDisk/old_profiles/imu_only.json
+- astrobee/gds_configs/DataToDisk/old_profiles/mobility.json
+- astrobee/gds_configs/DataToDisk/old_profiles/mobility_dock_full_frame_rate.json
+- astrobee/gds_configs/DataToDisk/old_profiles/mobility_dock_low_frame_rate.json
+- astrobee/gds_configs/DataToDisk/old_profiles/mobility_nav_dock_full_frame_rate.json
+- astrobee/gds_configs/DataToDisk/old_profiles/mobility_nav_dock_low_frame_rate.json
+- astrobee/gds_configs/DataToDisk/old_profiles/mobility_nav_full_frame_rate.json
+- astrobee/gds_configs/DataToDisk/old_profiles/mobility_nav_low_frame_rate.json
+- astrobee/gds_configs/DataToDisk/old_profiles/nav_dock_full_frame_rate.json
+- astrobee/gds_configs/DataToDisk/old_profiles/nav_dock_low_frame_rate.json
+- astrobee/gds_configs/DataToDisk/old_profiles/nav_full_frame_rate.json
+- astrobee/gds_configs/DataToDisk/old_profiles/nav_low_frame_rate.json
+- astrobee/gds_configs/DataToDisk/old_profiles/navcam_intrinsics.json
+- astrobee/gds_configs/DataToDisk/old_profiles/none.json
+- astrobee/gds_configs/DataToDisk/old_profiles/propulsion.json
+contract:
+  invariants: []
+  sideEffects: none
+dependencies:
+  calls: []
+  reads: []
+  writes: []
+  config: []
+evals:
+  tier0:
+  - type: invariant_check
+observability:
+  spanName: astrobee.astrobee.gds_configs.datatodisk.old_profiles
+approval:
+  required: false

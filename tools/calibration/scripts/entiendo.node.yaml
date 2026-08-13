@@ -1,0 +1,33 @@
+apiVersion: entiendo/v1
+kind: Node
+id: astrobee.tools.calibration.scripts
+name: scripts
+task: Scripts for running intrinsics calibration, saving results into config files,
+  and visualizing target detections and error histograms.
+nodeKind: compute
+group: astrobee
+owner: akashdatageek
+status: experimental
+claims:
+- tools/calibration/scripts/calibrate_intrinsics_and_save_results.py
+- tools/calibration/scripts/copy_calibration_params_to_config.py
+- tools/calibration/scripts/get_bags_with_topic.py
+- tools/calibration/scripts/make_error_histograms.py
+- tools/calibration/scripts/save_images_with_target_detections.py
+- tools/calibration/scripts/view_all_detections.py
+contract:
+  entrypoint: tools/calibration/scripts/make_error_histograms.py::make_histograms
+  invariants: []
+  sideEffects: none
+dependencies:
+  calls: []
+  reads: []
+  writes: []
+  config: []
+evals:
+  tier0:
+  - type: invariant_check
+observability:
+  spanName: astrobee.tools.calibration.scripts
+approval:
+  required: false

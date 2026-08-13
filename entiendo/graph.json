@@ -1,0 +1,946 @@
+{
+  "apiVersion": "entiendo/v1",
+  "nodes": [
+    {
+      "id": "astrobee.astrobee.commands",
+      "name": "commands",
+      "nodeKind": "config",
+      "group": "astrobee",
+      "owner": "akashdatageek",
+      "status": "experimental",
+      "claims": [
+        "astrobee/commands/freeFlyerPlanSchema.json"
+      ],
+      "claimedFileCount": 1,
+      "sideEffects": "none",
+      "spanName": "astrobee.astrobee.commands",
+      "approvalRequired": false
+    },
+    {
+      "id": "astrobee.astrobee.config.behaviors.light_flow",
+      "name": "light_flow",
+      "nodeKind": "config",
+      "group": "astrobee",
+      "owner": "akashdatageek",
+      "status": "experimental",
+      "claims": [
+        "astrobee/config/behaviors/light_flow/audio_recording.json",
+        "astrobee/config/behaviors/light_flow/charging.json",
+        "astrobee/config/behaviors/light_flow/failiure.json",
+        "astrobee/config/behaviors/light_flow/hibernate.json",
+        "astrobee/config/behaviors/light_flow/low_battery.json",
+        "astrobee/config/behaviors/light_flow/moving.json",
+        "astrobee/config/behaviors/light_flow/need_help.json",
+        "astrobee/config/behaviors/light_flow/power_left_only.json",
+        "astrobee/config/behaviors/light_flow/power_off.json",
+        "astrobee/config/behaviors/light_flow/power_on.json",
+        "astrobee/config/behaviors/light_flow/stop_all_lights.json",
+        "astrobee/config/behaviors/light_flow/success.json",
+        "astrobee/config/behaviors/light_flow/turning_down.json",
+        "astrobee/config/behaviors/light_flow/turning_left.json",
+        "astrobee/config/behaviors/light_flow/turning_up.json"
+      ],
+      "claimedFileCount": 15,
+      "sideEffects": "none",
+      "spanName": "astrobee.astrobee.config.behaviors.light_flow",
+      "approvalRequired": false
+    },
+    {
+      "id": "astrobee.astrobee.gds_configs",
+      "name": "gds_configs",
+      "nodeKind": "config",
+      "group": "astrobee",
+      "owner": "akashdatageek",
+      "status": "experimental",
+      "claims": [
+        "astrobee/gds_configs/AllInertiaConfig.json",
+        "astrobee/gds_configs/AllOperatingLimitsConfig.json",
+        "astrobee/gds_configs/PlanEditorSetCameraConfig.json",
+        "astrobee/gds_configs/TeleopCommandConfigurations.json"
+      ],
+      "claimedFileCount": 4,
+      "sideEffects": "none",
+      "spanName": "astrobee.astrobee.gds_configs",
+      "approvalRequired": false
+    },
+    {
+      "id": "astrobee.astrobee.gds_configs.datatodisk",
+      "name": "DataToDisk",
+      "nodeKind": "config",
+      "group": "astrobee",
+      "owner": "akashdatageek",
+      "status": "experimental",
+      "claims": [
+        "astrobee/gds_configs/DataToDisk/DockRAW.json",
+        "astrobee/gds_configs/DataToDisk/DockSAMPLED.json",
+        "astrobee/gds_configs/DataToDisk/ImuOnly.json",
+        "astrobee/gds_configs/DataToDisk/Mob.json",
+        "astrobee/gds_configs/DataToDisk/MobDockRAW.json",
+        "astrobee/gds_configs/DataToDisk/MobDockSAMPLED.json",
+        "astrobee/gds_configs/DataToDisk/MobNavDockRAW.json",
+        "astrobee/gds_configs/DataToDisk/MobNavDockSAMPLED.json",
+        "astrobee/gds_configs/DataToDisk/MobNavRAW.json",
+        "astrobee/gds_configs/DataToDisk/MobNavSAMPLED.json",
+        "astrobee/gds_configs/DataToDisk/NavDockRAW.json",
+        "astrobee/gds_configs/DataToDisk/NavDockSAMPLED.json",
+        "astrobee/gds_configs/DataToDisk/NavRAW.json",
+        "astrobee/gds_configs/DataToDisk/NavSAMPLED.json",
+        "astrobee/gds_configs/DataToDisk/Perch.json"
+      ],
+      "claimedFileCount": 15,
+      "sideEffects": "none",
+      "spanName": "astrobee.astrobee.gds_configs.datatodisk",
+      "approvalRequired": false
+    },
+    {
+      "id": "astrobee.astrobee.gds_configs.datatodisk.old_profiles",
+      "name": "old_profiles",
+      "nodeKind": "config",
+      "group": "astrobee",
+      "owner": "akashdatageek",
+      "status": "experimental",
+      "claims": [
+        "astrobee/gds_configs/DataToDisk/old_profiles/aft_extrinsics.json",
+        "astrobee/gds_configs/DataToDisk/old_profiles/all_sensors.json",
+        "astrobee/gds_configs/DataToDisk/old_profiles/dock_full_frame_rate.json",
+        "astrobee/gds_configs/DataToDisk/old_profiles/dock_low_frame_rate.json",
+        "astrobee/gds_configs/DataToDisk/old_profiles/dockcam_intrinsics.json",
+        "astrobee/gds_configs/DataToDisk/old_profiles/front_extrinsics.json",
+        "astrobee/gds_configs/DataToDisk/old_profiles/imu_only.json",
+        "astrobee/gds_configs/DataToDisk/old_profiles/mobility.json",
+        "astrobee/gds_configs/DataToDisk/old_profiles/mobility_dock_full_frame_rate.json",
+        "astrobee/gds_configs/DataToDisk/old_profiles/mobility_dock_low_frame_rate.json",
+        "astrobee/gds_configs/DataToDisk/old_profiles/mobility_nav_dock_full_frame_rate.json",
+        "astrobee/gds_configs/DataToDisk/old_profiles/mobility_nav_dock_low_frame_rate.json",
+        "astrobee/gds_configs/DataToDisk/old_profiles/mobility_nav_full_frame_rate.json",
+        "astrobee/gds_configs/DataToDisk/old_profiles/mobility_nav_low_frame_rate.json",
+        "astrobee/gds_configs/DataToDisk/old_profiles/nav_dock_full_frame_rate.json",
+        "astrobee/gds_configs/DataToDisk/old_profiles/nav_dock_low_frame_rate.json",
+        "astrobee/gds_configs/DataToDisk/old_profiles/nav_full_frame_rate.json",
+        "astrobee/gds_configs/DataToDisk/old_profiles/nav_low_frame_rate.json",
+        "astrobee/gds_configs/DataToDisk/old_profiles/navcam_intrinsics.json",
+        "astrobee/gds_configs/DataToDisk/old_profiles/none.json",
+        "astrobee/gds_configs/DataToDisk/old_profiles/propulsion.json"
+      ],
+      "claimedFileCount": 21,
+      "sideEffects": "none",
+      "spanName": "astrobee.astrobee.gds_configs.datatodisk.old_profiles",
+      "approvalRequired": false
+    },
+    {
+      "id": "astrobee.astrobee.gds_configs.issworld",
+      "name": "IssWorld",
+      "nodeKind": "config",
+      "group": "astrobee",
+      "owner": "akashdatageek",
+      "status": "experimental",
+      "claims": [
+        "astrobee/gds_configs/IssWorld/BookmarksList.json"
+      ],
+      "claimedFileCount": 1,
+      "sideEffects": "none",
+      "spanName": "astrobee.astrobee.gds_configs.issworld",
+      "approvalRequired": false
+    },
+    {
+      "id": "astrobee.astrobee.gds_configs.issworld.keepins",
+      "name": "keepins",
+      "nodeKind": "config",
+      "group": "astrobee",
+      "owner": "akashdatageek",
+      "status": "experimental",
+      "claims": [
+        "astrobee/gds_configs/IssWorld/keepins/keepin.json"
+      ],
+      "claimedFileCount": 1,
+      "sideEffects": "none",
+      "spanName": "astrobee.astrobee.gds_configs.issworld.keepins",
+      "approvalRequired": false
+    },
+    {
+      "id": "astrobee.astrobee.gds_configs.issworld.keepouts",
+      "name": "keepouts",
+      "nodeKind": "config",
+      "group": "astrobee",
+      "owner": "akashdatageek",
+      "status": "experimental",
+      "claims": [
+        "astrobee/gds_configs/IssWorld/keepouts/keepouts.json"
+      ],
+      "claimedFileCount": 1,
+      "sideEffects": "none",
+      "spanName": "astrobee.astrobee.gds_configs.issworld.keepouts",
+      "approvalRequired": false
+    },
+    {
+      "id": "astrobee.astrobee.resources",
+      "name": "resources",
+      "nodeKind": "config",
+      "group": "astrobee",
+      "owner": "akashdatageek",
+      "status": "experimental",
+      "claims": [
+        "astrobee/resources/diagnostics.yaml"
+      ],
+      "claimedFileCount": 1,
+      "sideEffects": "none",
+      "spanName": "astrobee.astrobee.resources",
+      "approvalRequired": false
+    },
+    {
+      "id": "astrobee.communications.ff_msgs.bmr",
+      "name": "bmr",
+      "nodeKind": "config",
+      "group": "astrobee",
+      "owner": "akashdatageek",
+      "status": "experimental",
+      "claims": [
+        "communications/ff_msgs/bmr/rosbag_rewrite_types_rules.json"
+      ],
+      "claimedFileCount": 1,
+      "sideEffects": "none",
+      "spanName": "astrobee.communications.ff_msgs.bmr",
+      "approvalRequired": false
+    },
+    {
+      "id": "astrobee.doc",
+      "name": "doc",
+      "nodeKind": "config",
+      "group": "astrobee",
+      "owner": "akashdatageek",
+      "status": "experimental",
+      "claims": [
+        "doc/deliverables.yaml"
+      ],
+      "claimedFileCount": 1,
+      "sideEffects": "none",
+      "spanName": "astrobee.doc",
+      "approvalRequired": false
+    },
+    {
+      "id": "astrobee.doc.scripts",
+      "name": "scripts",
+      "nodeKind": "compute",
+      "group": "astrobee",
+      "owner": "akashdatageek",
+      "status": "experimental",
+      "claims": [
+        "doc/scripts/action2dox.py",
+        "doc/scripts/common.py",
+        "doc/scripts/copy_html_link.py",
+        "doc/scripts/csv2dox.py",
+        "doc/scripts/deliv2csv.py",
+        "doc/scripts/msg2dox.py",
+        "doc/scripts/puml2dox.py",
+        "doc/scripts/simplify_cmake_depsgraph.py",
+        "doc/scripts/srv2dox.py"
+      ],
+      "claimedFileCount": 9,
+      "sideEffects": "none",
+      "spanName": "astrobee.doc.scripts",
+      "approvalRequired": false
+    },
+    {
+      "id": "astrobee.doc.style",
+      "name": "style",
+      "nodeKind": "compute",
+      "group": "astrobee",
+      "owner": "akashdatageek",
+      "status": "experimental",
+      "claims": [
+        "doc/style/doc_version_select.js",
+        "doc/style/freeflyer.js"
+      ],
+      "claimedFileCount": 2,
+      "sideEffects": "none",
+      "spanName": "astrobee.doc.style",
+      "approvalRequired": false
+    },
+    {
+      "id": "astrobee.hardware.eps_driver.tools",
+      "name": "tools",
+      "nodeKind": "compute",
+      "group": "astrobee",
+      "owner": "akashdatageek",
+      "status": "experimental",
+      "claims": [
+        "hardware/eps_driver/tools/eps_aux.py"
+      ],
+      "claimedFileCount": 1,
+      "sideEffects": "none",
+      "spanName": "astrobee.hardware.eps_driver.tools",
+      "approvalRequired": false
+    },
+    {
+      "id": "astrobee.hardware.fam_cmd_i2c.launch",
+      "name": "launch",
+      "nodeKind": "config",
+      "group": "astrobee",
+      "owner": "akashdatageek",
+      "status": "experimental",
+      "claims": [
+        "hardware/fam_cmd_i2c/launch/fam_cmd_i2c.yaml"
+      ],
+      "claimedFileCount": 1,
+      "sideEffects": "none",
+      "spanName": "astrobee.hardware.fam_cmd_i2c.launch",
+      "approvalRequired": false
+    },
+    {
+      "id": "astrobee.hardware.pico_driver.scripts",
+      "name": "scripts",
+      "nodeKind": "compute",
+      "group": "astrobee",
+      "owner": "akashdatageek",
+      "status": "experimental",
+      "claims": [
+        "hardware/pico_driver/scripts/debug_pico_utils.py",
+        "hardware/pico_driver/scripts/pico_check_split_extended.py",
+        "hardware/pico_driver/scripts/pico_split_extended.py",
+        "hardware/pico_driver/scripts/pico_utils.py",
+        "hardware/pico_driver/scripts/pico_write_xyz_coeff.py"
+      ],
+      "claimedFileCount": 5,
+      "sideEffects": "none",
+      "spanName": "astrobee.hardware.pico_driver.scripts",
+      "approvalRequired": false
+    },
+    {
+      "id": "astrobee.hardware.pmc_actuator.tools",
+      "name": "tools",
+      "nodeKind": "compute",
+      "group": "astrobee",
+      "owner": "akashdatageek",
+      "status": "experimental",
+      "claims": [
+        "hardware/pmc_actuator/tools/pmc_currents.py",
+        "hardware/pmc_actuator/tools/pmc_status.py"
+      ],
+      "claimedFileCount": 2,
+      "sideEffects": "none",
+      "spanName": "astrobee.hardware.pmc_actuator.tools",
+      "approvalRequired": false
+    },
+    {
+      "id": "astrobee.localization.localization_common",
+      "name": "localization_common",
+      "nodeKind": "compute",
+      "group": "astrobee",
+      "owner": "akashdatageek",
+      "status": "experimental",
+      "claims": [
+        "localization/localization_common/setup.py"
+      ],
+      "claimedFileCount": 1,
+      "sideEffects": "none",
+      "spanName": "astrobee.localization.localization_common",
+      "approvalRequired": false
+    },
+    {
+      "id": "astrobee.localization.localization_common.scripts.localization_common",
+      "name": "localization_common",
+      "nodeKind": "compute",
+      "group": "astrobee",
+      "owner": "akashdatageek",
+      "status": "experimental",
+      "claims": [
+        "localization/localization_common/scripts/localization_common/__init__.py",
+        "localization/localization_common/scripts/localization_common/utilities.py"
+      ],
+      "claimedFileCount": 2,
+      "sideEffects": "none",
+      "spanName": "astrobee.localization.localization_common.scripts.localization_common",
+      "approvalRequired": false
+    },
+    {
+      "id": "astrobee.localization.marker_tracking.tools.marker_tracking_node",
+      "name": "marker_tracking_node",
+      "nodeKind": "compute",
+      "group": "astrobee",
+      "owner": "akashdatageek",
+      "status": "experimental",
+      "claims": [
+        "localization/marker_tracking/tools/marker_tracking_node/features_counter.py"
+      ],
+      "claimedFileCount": 1,
+      "sideEffects": "none",
+      "spanName": "astrobee.localization.marker_tracking.tools.marker_tracking_node",
+      "approvalRequired": false
+    },
+    {
+      "id": "astrobee.localization.sparse_mapping.scripts",
+      "name": "scripts",
+      "nodeKind": "compute",
+      "group": "astrobee",
+      "owner": "akashdatageek",
+      "status": "experimental",
+      "claims": [
+        "localization/sparse_mapping/scripts/camera_trade_study.py",
+        "localization/sparse_mapping/scripts/make_surf_map.py",
+        "localization/sparse_mapping/scripts/make_surf_maps.py",
+        "localization/sparse_mapping/scripts/make_teblid512_map.py",
+        "localization/sparse_mapping/scripts/process_sequential_images.py",
+        "localization/sparse_mapping/scripts/prune_partitioned_directories.py"
+      ],
+      "claimedFileCount": 6,
+      "sideEffects": "none",
+      "spanName": "astrobee.localization.sparse_mapping.scripts",
+      "approvalRequired": false
+    },
+    {
+      "id": "astrobee.localization.sparse_mapping.tools",
+      "name": "tools",
+      "nodeKind": "compute",
+      "group": "astrobee",
+      "owner": "akashdatageek",
+      "status": "experimental",
+      "claims": [
+        "localization/sparse_mapping/tools/build_theia_map.py",
+        "localization/sparse_mapping/tools/generate_hugin.py",
+        "localization/sparse_mapping/tools/grow_map.py",
+        "localization/sparse_mapping/tools/parse_total_station.py",
+        "localization/sparse_mapping/tools/reduce_map.py",
+        "localization/sparse_mapping/tools/view_control_points.py"
+      ],
+      "claimedFileCount": 6,
+      "sideEffects": "none",
+      "spanName": "astrobee.localization.sparse_mapping.tools",
+      "approvalRequired": false
+    },
+    {
+      "id": "astrobee.scripts.calibrate",
+      "name": "calibrate",
+      "nodeKind": "compute",
+      "group": "astrobee",
+      "owner": "akashdatageek",
+      "status": "experimental",
+      "claims": [
+        "scripts/calibrate/calibration_utils.py",
+        "scripts/calibrate/extrinsics_calibrate.py",
+        "scripts/calibrate/intrinsics_calibrate.py",
+        "scripts/calibrate/markers_to_Kalibr.py"
+      ],
+      "claimedFileCount": 4,
+      "sideEffects": "none",
+      "spanName": "astrobee.scripts.calibrate",
+      "approvalRequired": false
+    },
+    {
+      "id": "astrobee.scripts.calibrate.config",
+      "name": "config",
+      "nodeKind": "config",
+      "group": "astrobee",
+      "owner": "akashdatageek",
+      "status": "experimental",
+      "claims": [
+        "scripts/calibrate/config/april_grid.yaml",
+        "scripts/calibrate/config/granite_april_tag.yaml",
+        "scripts/calibrate/config/imu.yaml",
+        "scripts/calibrate/config/iss_checkerboard.yaml"
+      ],
+      "claimedFileCount": 4,
+      "sideEffects": "none",
+      "spanName": "astrobee.scripts.calibrate.config",
+      "approvalRequired": false
+    },
+    {
+      "id": "astrobee.scripts.daemon.astrobee",
+      "name": "astrobee",
+      "nodeKind": "config",
+      "group": "astrobee",
+      "owner": "akashdatageek",
+      "status": "experimental",
+      "claims": [
+        "scripts/daemon/astrobee/astrobee.env"
+      ],
+      "claimedFileCount": 1,
+      "sideEffects": "none",
+      "spanName": "astrobee.scripts.daemon.astrobee",
+      "approvalRequired": false
+    },
+    {
+      "id": "astrobee.scripts.daemon.dock",
+      "name": "dock",
+      "nodeKind": "config",
+      "group": "astrobee",
+      "owner": "akashdatageek",
+      "status": "experimental",
+      "claims": [
+        "scripts/daemon/dock/dock.env"
+      ],
+      "claimedFileCount": 1,
+      "sideEffects": "none",
+      "spanName": "astrobee.scripts.daemon.dock",
+      "approvalRequired": false
+    },
+    {
+      "id": "astrobee.scripts.debug",
+      "name": "debug",
+      "nodeKind": "compute",
+      "group": "astrobee",
+      "owner": "akashdatageek",
+      "status": "experimental",
+      "claims": [
+        "scripts/debug/image_stats.py",
+        "scripts/debug/show_avg_features.py"
+      ],
+      "claimedFileCount": 2,
+      "sideEffects": "none",
+      "spanName": "astrobee.scripts.debug",
+      "approvalRequired": false
+    },
+    {
+      "id": "astrobee.scripts.git",
+      "name": "git",
+      "nodeKind": "compute",
+      "group": "astrobee",
+      "owner": "akashdatageek",
+      "status": "experimental",
+      "claims": [
+        "scripts/git/cpplint.py",
+        "scripts/git/cpplint_repo.py"
+      ],
+      "claimedFileCount": 2,
+      "sideEffects": "none",
+      "spanName": "astrobee.scripts.git",
+      "approvalRequired": false
+    },
+    {
+      "id": "astrobee.scripts.postprocessing.coverage_analysis",
+      "name": "coverage_analysis",
+      "nodeKind": "compute",
+      "group": "astrobee",
+      "owner": "akashdatageek",
+      "status": "experimental",
+      "claims": [
+        "scripts/postprocessing/coverage_analysis/activity_db_generator.py",
+        "scripts/postprocessing/coverage_analysis/constants.py",
+        "scripts/postprocessing/coverage_analysis/coverage_analyzer.py",
+        "scripts/postprocessing/coverage_analysis/coverage_painter.py",
+        "scripts/postprocessing/coverage_analysis/coverage_stats_reporter.py",
+        "scripts/postprocessing/coverage_analysis/img_to_bag.py"
+      ],
+      "claimedFileCount": 6,
+      "sideEffects": "none",
+      "spanName": "astrobee.scripts.postprocessing.coverage_analysis",
+      "approvalRequired": false
+    },
+    {
+      "id": "astrobee.shared.jsonloader.test.data",
+      "name": "data",
+      "nodeKind": "config",
+      "group": "astrobee",
+      "owner": "akashdatageek",
+      "status": "experimental",
+      "claims": [
+        "shared/jsonloader/test/data/inconsistent_waypoints.json",
+        "shared/jsonloader/test/data/keepout.json",
+        "shared/jsonloader/test/data/keepout_missing_safe.json",
+        "shared/jsonloader/test/data/keepout_missing_sequence.json",
+        "shared/jsonloader/test/data/keepout_wrong_sequence.json"
+      ],
+      "claimedFileCount": 5,
+      "sideEffects": "none",
+      "spanName": "astrobee.shared.jsonloader.test.data",
+      "approvalRequired": false
+    },
+    {
+      "id": "astrobee.shared.jsonloader.test.data.group",
+      "name": "group",
+      "nodeKind": "config",
+      "group": "astrobee",
+      "owner": "akashdatageek",
+      "status": "experimental",
+      "claims": [
+        "shared/jsonloader/test/data/group/01_walls_safe.json",
+        "shared/jsonloader/test/data/group/02_robonaught_unsafe.json",
+        "shared/jsonloader/test/data/group/03_bed_unsafe.json"
+      ],
+      "claimedFileCount": 3,
+      "sideEffects": "none",
+      "spanName": "astrobee.shared.jsonloader.test.data.group",
+      "approvalRequired": false
+    },
+    {
+      "id": "astrobee.tools.bag_processing",
+      "name": "bag_processing",
+      "nodeKind": "compute",
+      "group": "astrobee",
+      "owner": "akashdatageek",
+      "status": "experimental",
+      "claims": [
+        "tools/bag_processing/setup.py"
+      ],
+      "claimedFileCount": 1,
+      "sideEffects": "none",
+      "spanName": "astrobee.tools.bag_processing",
+      "approvalRequired": false
+    },
+    {
+      "id": "astrobee.tools.bag_processing.scripts",
+      "name": "scripts",
+      "nodeKind": "compute",
+      "group": "astrobee",
+      "owner": "akashdatageek",
+      "status": "experimental",
+      "claims": [
+        "tools/bag_processing/scripts/__init__.py",
+        "tools/bag_processing/scripts/apply_histogram_equalization_to_images.py",
+        "tools/bag_processing/scripts/check_bag_for_gaps.py",
+        "tools/bag_processing/scripts/clock_skew.py",
+        "tools/bag_processing/scripts/csv_join.py",
+        "tools/bag_processing/scripts/get_msg_stats.py",
+        "tools/bag_processing/scripts/rosbag_debayer.py",
+        "tools/bag_processing/scripts/rosbag_detect_bad_topics.py",
+        "tools/bag_processing/scripts/rosbag_extract_images.py",
+        "tools/bag_processing/scripts/rosbag_fix_all.py",
+        "tools/bag_processing/scripts/rosbag_merge.py",
+        "tools/bag_processing/scripts/rosbag_rewrite_types.py",
+        "tools/bag_processing/scripts/rosbag_sample.py",
+        "tools/bag_processing/scripts/rosbag_splice.py",
+        "tools/bag_processing/scripts/rosbag_topic_filter.py",
+        "tools/bag_processing/scripts/rosbag_trim.py",
+        "tools/bag_processing/scripts/rosbag_verify.py"
+      ],
+      "claimedFileCount": 17,
+      "sideEffects": "none",
+      "spanName": "astrobee.tools.bag_processing.scripts",
+      "approvalRequired": false
+    },
+    {
+      "id": "astrobee.tools.bag_processing.scripts.utilities",
+      "name": "utilities",
+      "nodeKind": "compute",
+      "group": "astrobee",
+      "owner": "akashdatageek",
+      "status": "experimental",
+      "claims": [
+        "tools/bag_processing/scripts/utilities/__init__.py",
+        "tools/bag_processing/scripts/utilities/bmr_renumber_enum.py",
+        "tools/bag_processing/scripts/utilities/utilities.py"
+      ],
+      "claimedFileCount": 3,
+      "sideEffects": "none",
+      "spanName": "astrobee.tools.bag_processing.scripts.utilities",
+      "approvalRequired": false
+    },
+    {
+      "id": "astrobee.tools.bag_processing.src.bag_processing",
+      "name": "bag_processing",
+      "nodeKind": "compute",
+      "group": "astrobee",
+      "owner": "akashdatageek",
+      "status": "experimental",
+      "claims": [
+        "tools/bag_processing/src/bag_processing/__init__.py",
+        "tools/bag_processing/src/bag_processing/analyze_bad_pixels.py",
+        "tools/bag_processing/src/bag_processing/pixel_utils.py"
+      ],
+      "claimedFileCount": 3,
+      "sideEffects": "none",
+      "spanName": "astrobee.tools.bag_processing.src.bag_processing",
+      "approvalRequired": false
+    },
+    {
+      "id": "astrobee.tools.bag_processing.test",
+      "name": "test",
+      "nodeKind": "compute",
+      "group": "astrobee",
+      "owner": "akashdatageek",
+      "status": "experimental",
+      "claims": [
+        "tools/bag_processing/test/test_fix_all.py",
+        "tools/bag_processing/test/test_pixel_utils.py"
+      ],
+      "claimedFileCount": 2,
+      "sideEffects": "none",
+      "spanName": "astrobee.tools.bag_processing.test",
+      "approvalRequired": false
+    },
+    {
+      "id": "astrobee.tools.calibration.scripts",
+      "name": "scripts",
+      "nodeKind": "compute",
+      "group": "astrobee",
+      "owner": "akashdatageek",
+      "status": "experimental",
+      "claims": [
+        "tools/calibration/scripts/calibrate_intrinsics_and_save_results.py",
+        "tools/calibration/scripts/copy_calibration_params_to_config.py",
+        "tools/calibration/scripts/get_bags_with_topic.py",
+        "tools/calibration/scripts/make_error_histograms.py",
+        "tools/calibration/scripts/save_images_with_target_detections.py",
+        "tools/calibration/scripts/view_all_detections.py"
+      ],
+      "claimedFileCount": 6,
+      "sideEffects": "none",
+      "spanName": "astrobee.tools.calibration.scripts",
+      "approvalRequired": false
+    },
+    {
+      "id": "astrobee.tools.gds_helper.src",
+      "name": "src",
+      "nodeKind": "compute",
+      "group": "astrobee",
+      "owner": "akashdatageek",
+      "status": "experimental",
+      "claims": [
+        "tools/gds_helper/src/gds_simulator.py"
+      ],
+      "claimedFileCount": 1,
+      "sideEffects": "none",
+      "spanName": "astrobee.tools.gds_helper.src",
+      "approvalRequired": false
+    },
+    {
+      "id": "astrobee.tools.gnc_visualizer.dds",
+      "name": "dds",
+      "nodeKind": "compute",
+      "group": "astrobee",
+      "owner": "akashdatageek",
+      "status": "experimental",
+      "claims": [
+        "tools/gnc_visualizer/dds/reader.py",
+        "tools/gnc_visualizer/dds/writer.py"
+      ],
+      "claimedFileCount": 2,
+      "sideEffects": "none",
+      "spanName": "astrobee.tools.gnc_visualizer.dds",
+      "approvalRequired": false
+    },
+    {
+      "id": "astrobee.tools.gnc_visualizer.scripts",
+      "name": "scripts",
+      "nodeKind": "compute",
+      "group": "astrobee",
+      "owner": "akashdatageek",
+      "status": "experimental",
+      "claims": [
+        "tools/gnc_visualizer/scripts/plot_types.py",
+        "tools/gnc_visualizer/scripts/visualizer.py"
+      ],
+      "claimedFileCount": 2,
+      "sideEffects": "none",
+      "spanName": "astrobee.tools.gnc_visualizer.scripts",
+      "approvalRequired": false
+    },
+    {
+      "id": "astrobee.tools.gnc_visualizer.scripts.communications",
+      "name": "communications",
+      "nodeKind": "compute",
+      "group": "astrobee",
+      "owner": "akashdatageek",
+      "status": "experimental",
+      "claims": [
+        "tools/gnc_visualizer/scripts/communications/com_manager.py",
+        "tools/gnc_visualizer/scripts/communications/config.ini",
+        "tools/gnc_visualizer/scripts/communications/configuration_support.py",
+        "tools/gnc_visualizer/scripts/communications/data_support.py",
+        "tools/gnc_visualizer/scripts/communications/dds_support.py",
+        "tools/gnc_visualizer/scripts/communications/ros_support.py"
+      ],
+      "claimedFileCount": 6,
+      "sideEffects": "none",
+      "spanName": "astrobee.tools.gnc_visualizer.scripts.communications",
+      "approvalRequired": false
+    },
+    {
+      "id": "astrobee.tools.localization_analysis.scripts",
+      "name": "scripts",
+      "nodeKind": "compute",
+      "group": "astrobee",
+      "owner": "akashdatageek",
+      "status": "experimental",
+      "claims": [
+        "tools/localization_analysis/scripts/bag_and_parameter_sweeper.py",
+        "tools/localization_analysis/scripts/bag_sweeper.py",
+        "tools/localization_analysis/scripts/config_creator.py",
+        "tools/localization_analysis/scripts/depth_odometry_parameter_sweep.py",
+        "tools/localization_analysis/scripts/depth_odometry_results_plotter.py",
+        "tools/localization_analysis/scripts/groundtruth_sweep.py",
+        "tools/localization_analysis/scripts/imu_analyzer.py",
+        "tools/localization_analysis/scripts/loc_results_plotter.py",
+        "tools/localization_analysis/scripts/make_groundtruth.py",
+        "tools/localization_analysis/scripts/make_map.py",
+        "tools/localization_analysis/scripts/message_conversions.py",
+        "tools/localization_analysis/scripts/message_reader.py",
+        "tools/localization_analysis/scripts/parameter_sweep_results_plotter.py",
+        "tools/localization_analysis/scripts/parameter_sweep_utilities.py",
+        "tools/localization_analysis/scripts/parameter_sweeper.py",
+        "tools/localization_analysis/scripts/plot_conversions.py",
+        "tools/localization_analysis/scripts/plot_helpers.py",
+        "tools/localization_analysis/scripts/plotters.py",
+        "tools/localization_analysis/scripts/results_averager.py",
+        "tools/localization_analysis/scripts/results_savers.py",
+        "tools/localization_analysis/scripts/rmse_calculators.py",
+        "tools/localization_analysis/scripts/run_offline_replay_and_plot_results.py",
+        "tools/localization_analysis/scripts/states.py",
+        "tools/localization_analysis/scripts/test_rmse_calculators.py",
+        "tools/localization_analysis/scripts/vio_results_plotter.py"
+      ],
+      "claimedFileCount": 25,
+      "sideEffects": "none",
+      "spanName": "astrobee.tools.localization_analysis.scripts",
+      "approvalRequired": false
+    },
+    {
+      "id": "astrobee.tools.performance_tester.scripts",
+      "name": "scripts",
+      "nodeKind": "compute",
+      "group": "astrobee",
+      "owner": "akashdatageek",
+      "status": "experimental",
+      "claims": [
+        "tools/performance_tester/scripts/analyse_bag.py"
+      ],
+      "claimedFileCount": 1,
+      "sideEffects": "none",
+      "spanName": "astrobee.tools.performance_tester.scripts",
+      "approvalRequired": false
+    }
+  ],
+  "edges": [],
+  "doubleClaimed": [],
+  "proposedEntrypoints": {},
+  "unverifiedDeclaredEdges": [],
+  "possibleUndeclaredDynamicDep": [
+    {
+      "node": "astrobee.localization.localization_common.scripts.localization_common",
+      "file": "localization/localization_common/scripts/localization_common/utilities.py",
+      "pattern": "subprocess"
+    },
+    {
+      "node": "astrobee.localization.sparse_mapping.scripts",
+      "file": "localization/sparse_mapping/scripts/camera_trade_study.py",
+      "pattern": "subprocess"
+    },
+    {
+      "node": "astrobee.localization.sparse_mapping.scripts",
+      "file": "localization/sparse_mapping/scripts/process_sequential_images.py",
+      "pattern": "subprocess"
+    },
+    {
+      "node": "astrobee.localization.sparse_mapping.tools",
+      "file": "localization/sparse_mapping/tools/build_theia_map.py",
+      "pattern": "subprocess"
+    },
+    {
+      "node": "astrobee.localization.sparse_mapping.tools",
+      "file": "localization/sparse_mapping/tools/generate_hugin.py",
+      "pattern": "subprocess"
+    },
+    {
+      "node": "astrobee.localization.sparse_mapping.tools",
+      "file": "localization/sparse_mapping/tools/grow_map.py",
+      "pattern": "subprocess"
+    },
+    {
+      "node": "astrobee.localization.sparse_mapping.tools",
+      "file": "localization/sparse_mapping/tools/reduce_map.py",
+      "pattern": "subprocess"
+    },
+    {
+      "node": "astrobee.localization.sparse_mapping.tools",
+      "file": "localization/sparse_mapping/tools/view_control_points.py",
+      "pattern": "subprocess"
+    },
+    {
+      "node": "astrobee.scripts.calibrate",
+      "file": "scripts/calibrate/extrinsics_calibrate.py",
+      "pattern": "subprocess"
+    },
+    {
+      "node": "astrobee.scripts.calibrate",
+      "file": "scripts/calibrate/intrinsics_calibrate.py",
+      "pattern": "subprocess"
+    },
+    {
+      "node": "astrobee.scripts.calibrate",
+      "file": "scripts/calibrate/markers_to_Kalibr.py",
+      "pattern": "subprocess"
+    },
+    {
+      "node": "astrobee.scripts.postprocessing.coverage_analysis",
+      "file": "scripts/postprocessing/coverage_analysis/coverage_analyzer.py",
+      "pattern": "subprocess"
+    },
+    {
+      "node": "astrobee.scripts.postprocessing.coverage_analysis",
+      "file": "scripts/postprocessing/coverage_analysis/coverage_painter.py",
+      "pattern": "subprocess"
+    },
+    {
+      "node": "astrobee.tools.bag_processing.scripts",
+      "file": "tools/bag_processing/scripts/rosbag_merge.py",
+      "pattern": "subprocess"
+    },
+    {
+      "node": "astrobee.tools.bag_processing.src.bag_processing",
+      "file": "tools/bag_processing/src/bag_processing/analyze_bad_pixels.py",
+      "pattern": "subprocess"
+    },
+    {
+      "node": "astrobee.tools.bag_processing.test",
+      "file": "tools/bag_processing/test/test_fix_all.py",
+      "pattern": "subprocess"
+    },
+    {
+      "node": "astrobee.tools.calibration.scripts",
+      "file": "tools/calibration/scripts/calibrate_intrinsics_and_save_results.py",
+      "pattern": "subprocess"
+    },
+    {
+      "node": "astrobee.tools.gnc_visualizer.scripts",
+      "file": "tools/gnc_visualizer/scripts/visualizer.py",
+      "pattern": "subprocess"
+    },
+    {
+      "node": "astrobee.tools.gnc_visualizer.scripts.communications",
+      "file": "tools/gnc_visualizer/scripts/communications/com_manager.py",
+      "pattern": "__import__"
+    },
+    {
+      "node": "astrobee.tools.gnc_visualizer.scripts.communications",
+      "file": "tools/gnc_visualizer/scripts/communications/ros_support.py",
+      "pattern": "subprocess"
+    }
+  ],
+  "dependencyCycles": [],
+  "adapters": [
+    {
+      "language": "python",
+      "extensions": [
+        ".py"
+      ],
+      "grade": "ast",
+      "evidenceTag": "import",
+      "cannotResolve": [
+        "importlib.import_module / __import__ with runtime arguments (flagged as possibleUndeclaredDynamicDep, not resolved to edges)",
+        "getattr / string-keyed dispatch onto modules",
+        "subprocess-spawned interpreters and os.system calls",
+        "network calls (requests/httpx/urllib) \u2014 out-of-process by nature"
+      ]
+    },
+    {
+      "language": "typescript",
+      "extensions": [
+        ".cjs",
+        ".cts",
+        ".js",
+        ".jsx",
+        ".mjs",
+        ".mts",
+        ".ts",
+        ".tsx"
+      ],
+      "grade": "regex-poc",
+      "evidenceTag": "ts-poc",
+      "cannotResolve": [
+        "import-like text inside comments or strings (regex, no tokenizer)",
+        "tsconfig `extends` chains (only the local tsconfig is read)",
+        "non-relative specifiers with no tsconfig alias or baseUrl match",
+        "type-directed resolution of any kind \u2014 no compiler behind this"
+      ]
+    }
+  ]
+}

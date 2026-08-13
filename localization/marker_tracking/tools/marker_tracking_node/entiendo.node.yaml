@@ -1,0 +1,27 @@
+apiVersion: entiendo/v1
+kind: Node
+id: astrobee.localization.marker_tracking.tools.marker_tracking_node
+name: marker_tracking_node
+task: Counts AR-marker feature detections from marker-tracking node output for debugging
+  tracking quality.
+nodeKind: compute
+group: astrobee
+owner: akashdatageek
+status: experimental
+claims:
+- localization/marker_tracking/tools/marker_tracking_node/features_counter.py
+contract:
+  invariants: []
+  sideEffects: none
+dependencies:
+  calls: []
+  reads: []
+  writes: []
+  config: []
+evals:
+  tier0:
+  - type: invariant_check
+observability:
+  spanName: astrobee.localization.marker_tracking.tools.marker_tracking_node
+approval:
+  required: false

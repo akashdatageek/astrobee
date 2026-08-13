@@ -1,0 +1,31 @@
+apiVersion: entiendo/v1
+kind: Node
+id: astrobee.hardware.pico_driver.scripts
+name: scripts
+task: 'Utilities for Pico Flexx depth-camera data: splitting extended frames, checking
+  splits, and writing XYZ coefficient files.'
+nodeKind: compute
+group: astrobee
+owner: akashdatageek
+status: experimental
+claims:
+- hardware/pico_driver/scripts/debug_pico_utils.py
+- hardware/pico_driver/scripts/pico_check_split_extended.py
+- hardware/pico_driver/scripts/pico_split_extended.py
+- hardware/pico_driver/scripts/pico_utils.py
+- hardware/pico_driver/scripts/pico_write_xyz_coeff.py
+contract:
+  invariants: []
+  sideEffects: none
+dependencies:
+  calls: []
+  reads: []
+  writes: []
+  config: []
+evals:
+  tier0:
+  - type: invariant_check
+observability:
+  spanName: astrobee.hardware.pico_driver.scripts
+approval:
+  required: false

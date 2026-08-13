@@ -1,0 +1,44 @@
+apiVersion: entiendo/v1
+kind: Node
+id: astrobee.tools.bag_processing.scripts
+name: scripts
+task: 'Command-line scripts for rosbag hygiene: fixing bags, detecting gaps and clock
+  skew, merging, trimming, and extracting statistics.'
+nodeKind: compute
+group: astrobee
+owner: akashdatageek
+status: experimental
+claims:
+- tools/bag_processing/scripts/__init__.py
+- tools/bag_processing/scripts/apply_histogram_equalization_to_images.py
+- tools/bag_processing/scripts/check_bag_for_gaps.py
+- tools/bag_processing/scripts/clock_skew.py
+- tools/bag_processing/scripts/csv_join.py
+- tools/bag_processing/scripts/get_msg_stats.py
+- tools/bag_processing/scripts/rosbag_debayer.py
+- tools/bag_processing/scripts/rosbag_detect_bad_topics.py
+- tools/bag_processing/scripts/rosbag_extract_images.py
+- tools/bag_processing/scripts/rosbag_fix_all.py
+- tools/bag_processing/scripts/rosbag_merge.py
+- tools/bag_processing/scripts/rosbag_rewrite_types.py
+- tools/bag_processing/scripts/rosbag_sample.py
+- tools/bag_processing/scripts/rosbag_splice.py
+- tools/bag_processing/scripts/rosbag_topic_filter.py
+- tools/bag_processing/scripts/rosbag_trim.py
+- tools/bag_processing/scripts/rosbag_verify.py
+contract:
+  entrypoint: tools/bag_processing/scripts/get_msg_stats.py::get_stats
+  invariants: []
+  sideEffects: none
+dependencies:
+  calls: []
+  reads: []
+  writes: []
+  config: []
+evals:
+  tier0:
+  - type: invariant_check
+observability:
+  spanName: astrobee.tools.bag_processing.scripts
+approval:
+  required: false

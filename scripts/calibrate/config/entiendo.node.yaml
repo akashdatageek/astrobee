@@ -1,0 +1,30 @@
+apiVersion: entiendo/v1
+kind: Node
+id: astrobee.scripts.calibrate.config
+name: config
+task: Kalibr target and IMU configuration files (april grid, checkerboard) used during
+  camera calibration.
+nodeKind: config
+group: astrobee
+owner: akashdatageek
+status: experimental
+claims:
+- scripts/calibrate/config/april_grid.yaml
+- scripts/calibrate/config/granite_april_tag.yaml
+- scripts/calibrate/config/imu.yaml
+- scripts/calibrate/config/iss_checkerboard.yaml
+contract:
+  invariants: []
+  sideEffects: none
+dependencies:
+  calls: []
+  reads: []
+  writes: []
+  config: []
+evals:
+  tier0:
+  - type: invariant_check
+observability:
+  spanName: astrobee.scripts.calibrate.config
+approval:
+  required: false

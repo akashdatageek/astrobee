@@ -1,0 +1,27 @@
+apiVersion: entiendo/v1
+kind: Node
+id: astrobee.tools.performance_tester.scripts
+name: scripts
+task: Analyzes recorded bags to compute performance statistics for the performance
+  tester.
+nodeKind: compute
+group: astrobee
+owner: akashdatageek
+status: experimental
+claims:
+- tools/performance_tester/scripts/analyse_bag.py
+contract:
+  invariants: []
+  sideEffects: none
+dependencies:
+  calls: []
+  reads: []
+  writes: []
+  config: []
+evals:
+  tier0:
+  - type: invariant_check
+observability:
+  spanName: astrobee.tools.performance_tester.scripts
+approval:
+  required: false

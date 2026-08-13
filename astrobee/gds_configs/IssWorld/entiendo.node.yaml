@@ -1,0 +1,26 @@
+apiVersion: entiendo/v1
+kind: Node
+id: astrobee.astrobee.gds_configs.issworld
+name: IssWorld
+task: Stores the GDS ISS-world bookmarks list of named viewpoints for operators.
+nodeKind: config
+group: astrobee
+owner: akashdatageek
+status: experimental
+claims:
+- astrobee/gds_configs/IssWorld/BookmarksList.json
+contract:
+  invariants: []
+  sideEffects: none
+dependencies:
+  calls: []
+  reads: []
+  writes: []
+  config: []
+evals:
+  tier0:
+  - type: invariant_check
+observability:
+  spanName: astrobee.astrobee.gds_configs.issworld
+approval:
+  required: false
