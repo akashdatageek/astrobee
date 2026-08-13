@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "entiendo": {
+      "command": "entiendo",
+      "args": ["mcp", "--root", "."]
+    }
+  }
+}
