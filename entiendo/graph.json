@@ -799,7 +799,129 @@
       "approvalRequired": false
     }
   ],
-  "edges": [],
+  "edges": [
+    {
+      "from": "astrobee.localization.sparse_mapping.scripts",
+      "to": "astrobee.localization.localization_common.scripts.localization_common",
+      "kinds": [
+        "calls"
+      ],
+      "declared": true,
+      "verified": true,
+      "verificationSource": [
+        "import"
+      ],
+      "resolution": "complete",
+      "observationCount": 0,
+      "lastVerifiedAt": null,
+      "evidence": [
+        "localization/sparse_mapping/scripts/make_surf_map.py imports localization_common.utilities",
+        "localization/sparse_mapping/scripts/make_surf_maps.py imports localization_common.utilities",
+        "localization/sparse_mapping/scripts/make_teblid512_map.py imports localization_common.utilities",
+        "localization/sparse_mapping/scripts/process_sequential_images.py imports localization_common.utilities"
+      ]
+    },
+    {
+      "from": "astrobee.tools.bag_processing.scripts",
+      "to": "astrobee.localization.localization_common.scripts.localization_common",
+      "kinds": [
+        "calls"
+      ],
+      "declared": true,
+      "verified": true,
+      "verificationSource": [
+        "import"
+      ],
+      "resolution": "complete",
+      "observationCount": 0,
+      "lastVerifiedAt": null,
+      "evidence": [
+        "tools/bag_processing/scripts/rosbag_merge.py imports localization_common.utilities"
+      ]
+    },
+    {
+      "from": "astrobee.tools.bag_processing.scripts",
+      "to": "astrobee.tools.bag_processing.scripts.utilities",
+      "kinds": [
+        "calls"
+      ],
+      "declared": true,
+      "verified": true,
+      "verificationSource": [
+        "import"
+      ],
+      "resolution": "complete",
+      "observationCount": 0,
+      "lastVerifiedAt": null,
+      "evidence": [
+        "tools/bag_processing/scripts/apply_histogram_equalization_to_images.py imports utilities.utilities",
+        "tools/bag_processing/scripts/check_bag_for_gaps.py imports utilities.utilities",
+        "tools/bag_processing/scripts/rosbag_splice.py imports utilities.utilities",
+        "tools/bag_processing/scripts/rosbag_trim.py imports utilities.utilities"
+      ]
+    },
+    {
+      "from": "astrobee.tools.bag_processing.scripts",
+      "to": "astrobee.tools.bag_processing.src.bag_processing",
+      "kinds": [
+        "calls"
+      ],
+      "declared": true,
+      "verified": true,
+      "verificationSource": [
+        "import"
+      ],
+      "resolution": "complete",
+      "observationCount": 0,
+      "lastVerifiedAt": null,
+      "evidence": [
+        "tools/bag_processing/scripts/rosbag_debayer.py imports bag_processing"
+      ]
+    },
+    {
+      "from": "astrobee.tools.bag_processing.test",
+      "to": "astrobee.tools.bag_processing.src.bag_processing",
+      "kinds": [
+        "calls"
+      ],
+      "declared": true,
+      "verified": true,
+      "verificationSource": [
+        "import"
+      ],
+      "resolution": "complete",
+      "observationCount": 0,
+      "lastVerifiedAt": null,
+      "evidence": [
+        "tools/bag_processing/test/test_pixel_utils.py imports bag_processing"
+      ]
+    },
+    {
+      "from": "astrobee.tools.localization_analysis.scripts",
+      "to": "astrobee.localization.localization_common.scripts.localization_common",
+      "kinds": [
+        "calls"
+      ],
+      "declared": true,
+      "verified": true,
+      "verificationSource": [
+        "import"
+      ],
+      "resolution": "complete",
+      "observationCount": 0,
+      "lastVerifiedAt": null,
+      "evidence": [
+        "tools/localization_analysis/scripts/bag_and_parameter_sweeper.py imports localization_common.utilities",
+        "tools/localization_analysis/scripts/bag_sweeper.py imports localization_common.utilities",
+        "tools/localization_analysis/scripts/depth_odometry_parameter_sweep.py imports localization_common.utilities",
+        "tools/localization_analysis/scripts/groundtruth_sweep.py imports localization_common.utilities",
+        "tools/localization_analysis/scripts/make_groundtruth.py imports localization_common.utilities",
+        "tools/localization_analysis/scripts/make_map.py imports localization_common.utilities",
+        "tools/localization_analysis/scripts/parameter_sweeper.py imports localization_common.utilities",
+        "tools/localization_analysis/scripts/run_offline_replay_and_plot_results.py imports localization_common.utilities"
+      ]
+    }
+  ],
   "doubleClaimed": [],
   "proposedEntrypoints": {},
   "unverifiedDeclaredEdges": [],
@@ -918,7 +1040,8 @@
         "importlib.import_module / __import__ with runtime arguments (flagged as possibleUndeclaredDynamicDep, not resolved to edges)",
         "getattr / string-keyed dispatch onto modules",
         "subprocess-spawned interpreters and os.system calls",
-        "network calls (requests/httpx/urllib) \u2014 out-of-process by nature"
+        "network calls (requests/httpx/urllib) \u2014 out-of-process by nature",
+        "same-named top-level packages in different directories (ambiguous \u2014 refused, never guessed)"
       ]
     },
     {

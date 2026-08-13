@@ -31,7 +31,10 @@ contract:
   invariants: []
   sideEffects: none
 dependencies:
-  calls: []
+  calls:
+  - astrobee.localization.localization_common.scripts.localization_common
+  - astrobee.tools.bag_processing.scripts.utilities
+  - astrobee.tools.bag_processing.src.bag_processing
   reads: []
   writes: []
   config: []

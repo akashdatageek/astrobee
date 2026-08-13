@@ -38,3 +38,5 @@
 {"commit": "57bbf86", "kind": "eval", "nodeId": "astrobee.tools.bag_processing.scripts", "seq": 37, "tier": 0, "ts": "2026-08-13T19:36:14+00:00", "v": 1, "verdict": "UNTESTED"}
 {"commit": "57bbf86", "kind": "eval", "nodeId": "astrobee.tools.gnc_visualizer.scripts.communications", "seq": 38, "tier": 0, "ts": "2026-08-13T19:36:14+00:00", "v": 1, "verdict": "RED"}
 {"commit": "57bbf86", "kind": "eval", "nodeId": "astrobee.tools.gnc_visualizer.scripts.communications", "seq": 39, "tier": 0, "ts": "2026-08-13T19:36:28+00:00", "v": 1, "verdict": "GREEN"}
+{"commit": "c62be13", "kind": "eval", "nodeId": "astrobee.localization.sparse_mapping.tools", "seq": 40, "tier": 0, "ts": "2026-08-13T21:36:21+00:00", "v": 1, "verdict": "RED"}
+{"commit": "c62be13", "kind": "eval", "nodeId": "astrobee.localization.sparse_mapping.tools", "seq": 41, "tier": 0, "ts": "2026-08-13T21:36:40+00:00", "v": 1, "verdict": "GREEN"}

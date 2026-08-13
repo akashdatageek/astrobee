@@ -40,7 +40,8 @@ contract:
   invariants: []
   sideEffects: none
 dependencies:
-  calls: []
+  calls:
+  - astrobee.localization.localization_common.scripts.localization_common
   reads: []
   writes: []
   config: []
