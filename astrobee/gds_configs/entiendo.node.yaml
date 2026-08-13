@@ -1,0 +1,30 @@
+apiVersion: entiendo/v1
+kind: Node
+id: astrobee.astrobee.gds_configs
+name: gds_configs
+task: 'Provides GDS operator configuration for Astrobee: inertia profiles, operating
+  limits, teleop command sets, and plan-editor camera presets.'
+nodeKind: config
+group: astrobee
+owner: akashdatageek
+status: experimental
+claims:
+- astrobee/gds_configs/AllInertiaConfig.json
+- astrobee/gds_configs/AllOperatingLimitsConfig.json
+- astrobee/gds_configs/PlanEditorSetCameraConfig.json
+- astrobee/gds_configs/TeleopCommandConfigurations.json
+contract:
+  invariants: []
+  sideEffects: none
+dependencies:
+  calls: []
+  reads: []
+  writes: []
+  config: []
+evals:
+  tier0:
+  - type: invariant_check
+observability:
+  spanName: astrobee.astrobee.gds_configs
+approval:
+  required: false

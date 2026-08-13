@@ -1,0 +1,26 @@
+apiVersion: entiendo/v1
+kind: Node
+id: astrobee.astrobee.resources
+name: resources
+task: Catalogs the diagnostics keys Astrobee nodes report, as consumed by system monitoring.
+nodeKind: config
+group: astrobee
+owner: akashdatageek
+status: experimental
+claims:
+- astrobee/resources/diagnostics.yaml
+contract:
+  invariants: []
+  sideEffects: none
+dependencies:
+  calls: []
+  reads: []
+  writes: []
+  config: []
+evals:
+  tier0:
+  - type: invariant_check
+observability:
+  spanName: astrobee.astrobee.resources
+approval:
+  required: false

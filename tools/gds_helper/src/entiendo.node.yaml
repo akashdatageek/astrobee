@@ -1,0 +1,27 @@
+apiVersion: entiendo/v1
+kind: Node
+id: astrobee.tools.gds_helper.src
+name: src
+task: Simulates GDS commanding so flight-software behavior can be exercised without
+  a real ground station.
+nodeKind: compute
+group: astrobee
+owner: akashdatageek
+status: experimental
+claims:
+- tools/gds_helper/src/gds_simulator.py
+contract:
+  invariants: []
+  sideEffects: none
+dependencies:
+  calls: []
+  reads: []
+  writes: []
+  config: []
+evals:
+  tier0:
+  - type: invariant_check
+observability:
+  spanName: astrobee.tools.gds_helper.src
+approval:
+  required: false

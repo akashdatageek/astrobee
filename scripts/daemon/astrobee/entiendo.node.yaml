@@ -1,0 +1,26 @@
+apiVersion: entiendo/v1
+kind: Node
+id: astrobee.scripts.daemon.astrobee
+name: astrobee
+task: Environment file configuring the astrobee robot systemd daemon.
+nodeKind: config
+group: astrobee
+owner: akashdatageek
+status: experimental
+claims:
+- scripts/daemon/astrobee/astrobee.env
+contract:
+  invariants: []
+  sideEffects: none
+dependencies:
+  calls: []
+  reads: []
+  writes: []
+  config: []
+evals:
+  tier0:
+  - type: invariant_check
+observability:
+  spanName: astrobee.scripts.daemon.astrobee
+approval:
+  required: false

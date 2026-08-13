@@ -1,0 +1,41 @@
+apiVersion: entiendo/v1
+kind: Node
+id: astrobee.astrobee.config.behaviors.light_flow
+name: light_flow
+task: Declares the LED light-flow signal patterns Astrobee displays for each robot
+  state (charging, moving, hibernating, etc.).
+nodeKind: config
+group: astrobee
+owner: akashdatageek
+status: experimental
+claims:
+- astrobee/config/behaviors/light_flow/audio_recording.json
+- astrobee/config/behaviors/light_flow/charging.json
+- astrobee/config/behaviors/light_flow/failiure.json
+- astrobee/config/behaviors/light_flow/hibernate.json
+- astrobee/config/behaviors/light_flow/low_battery.json
+- astrobee/config/behaviors/light_flow/moving.json
+- astrobee/config/behaviors/light_flow/need_help.json
+- astrobee/config/behaviors/light_flow/power_left_only.json
+- astrobee/config/behaviors/light_flow/power_off.json
+- astrobee/config/behaviors/light_flow/power_on.json
+- astrobee/config/behaviors/light_flow/stop_all_lights.json
+- astrobee/config/behaviors/light_flow/success.json
+- astrobee/config/behaviors/light_flow/turning_down.json
+- astrobee/config/behaviors/light_flow/turning_left.json
+- astrobee/config/behaviors/light_flow/turning_up.json
+contract:
+  invariants: []
+  sideEffects: none
+dependencies:
+  calls: []
+  reads: []
+  writes: []
+  config: []
+evals:
+  tier0:
+  - type: invariant_check
+observability:
+  spanName: astrobee.astrobee.config.behaviors.light_flow
+approval:
+  required: false

@@ -1,0 +1,31 @@
+apiVersion: entiendo/v1
+kind: Node
+id: astrobee.shared.jsonloader.test.data
+name: data
+task: Malformed and valid keepout/plan JSON fixtures exercising jsonloader validation
+  error paths.
+nodeKind: config
+group: astrobee
+owner: akashdatageek
+status: experimental
+claims:
+- shared/jsonloader/test/data/inconsistent_waypoints.json
+- shared/jsonloader/test/data/keepout.json
+- shared/jsonloader/test/data/keepout_missing_safe.json
+- shared/jsonloader/test/data/keepout_missing_sequence.json
+- shared/jsonloader/test/data/keepout_wrong_sequence.json
+contract:
+  invariants: []
+  sideEffects: none
+dependencies:
+  calls: []
+  reads: []
+  writes: []
+  config: []
+evals:
+  tier0:
+  - type: invariant_check
+observability:
+  spanName: astrobee.shared.jsonloader.test.data
+approval:
+  required: false

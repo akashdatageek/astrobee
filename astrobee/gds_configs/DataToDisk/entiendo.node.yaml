@@ -1,0 +1,41 @@
+apiVersion: entiendo/v1
+kind: Node
+id: astrobee.astrobee.gds_configs.datatodisk
+name: DataToDisk
+task: Defines the active data-to-disk recording profiles selecting which topics Astrobee
+  records and at what rates.
+nodeKind: config
+group: astrobee
+owner: akashdatageek
+status: experimental
+claims:
+- astrobee/gds_configs/DataToDisk/DockRAW.json
+- astrobee/gds_configs/DataToDisk/DockSAMPLED.json
+- astrobee/gds_configs/DataToDisk/ImuOnly.json
+- astrobee/gds_configs/DataToDisk/Mob.json
+- astrobee/gds_configs/DataToDisk/MobDockRAW.json
+- astrobee/gds_configs/DataToDisk/MobDockSAMPLED.json
+- astrobee/gds_configs/DataToDisk/MobNavDockRAW.json
+- astrobee/gds_configs/DataToDisk/MobNavDockSAMPLED.json
+- astrobee/gds_configs/DataToDisk/MobNavRAW.json
+- astrobee/gds_configs/DataToDisk/MobNavSAMPLED.json
+- astrobee/gds_configs/DataToDisk/NavDockRAW.json
+- astrobee/gds_configs/DataToDisk/NavDockSAMPLED.json
+- astrobee/gds_configs/DataToDisk/NavRAW.json
+- astrobee/gds_configs/DataToDisk/NavSAMPLED.json
+- astrobee/gds_configs/DataToDisk/Perch.json
+contract:
+  invariants: []
+  sideEffects: none
+dependencies:
+  calls: []
+  reads: []
+  writes: []
+  config: []
+evals:
+  tier0:
+  - type: invariant_check
+observability:
+  spanName: astrobee.astrobee.gds_configs.datatodisk
+approval:
+  required: false

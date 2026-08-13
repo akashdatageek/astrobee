@@ -1,0 +1,33 @@
+apiVersion: entiendo/v1
+kind: Node
+id: astrobee.localization.sparse_mapping.scripts
+name: scripts
+task: Builds SURF and TEBLID sparse visual maps from image sequences, including per-bag
+  map construction and pruning.
+nodeKind: compute
+group: astrobee
+owner: akashdatageek
+status: experimental
+claims:
+- localization/sparse_mapping/scripts/camera_trade_study.py
+- localization/sparse_mapping/scripts/make_surf_map.py
+- localization/sparse_mapping/scripts/make_surf_maps.py
+- localization/sparse_mapping/scripts/make_teblid512_map.py
+- localization/sparse_mapping/scripts/process_sequential_images.py
+- localization/sparse_mapping/scripts/prune_partitioned_directories.py
+contract:
+  entrypoint: localization/sparse_mapping/scripts/make_surf_map.py::make_surf_map
+  invariants: []
+  sideEffects: none
+dependencies:
+  calls: []
+  reads: []
+  writes: []
+  config: []
+evals:
+  tier0:
+  - type: invariant_check
+observability:
+  spanName: astrobee.localization.sparse_mapping.scripts
+approval:
+  required: false

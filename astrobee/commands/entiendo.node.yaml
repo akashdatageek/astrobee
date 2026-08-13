@@ -1,0 +1,27 @@
+apiVersion: entiendo/v1
+kind: Node
+id: astrobee.astrobee.commands
+name: commands
+task: Defines the Free Flyer plan schema (command dictionary) that GDS uses to author and validate Astrobee
+  plans.
+nodeKind: config
+group: astrobee
+owner: akashdatageek
+status: experimental
+claims:
+- astrobee/commands/freeFlyerPlanSchema.json
+contract:
+  invariants: []
+  sideEffects: none
+dependencies:
+  calls: []
+  reads: []
+  writes: []
+  config: []
+evals:
+  tier0:
+  - type: invariant_check
+observability:
+  spanName: astrobee.astrobee.commands
+approval:
+  required: false

@@ -1,0 +1,26 @@
+apiVersion: entiendo/v1
+kind: Node
+id: astrobee.localization.localization_common
+name: localization_common
+task: Packaging (setup.py) for the localization_common Python module.
+nodeKind: compute
+group: astrobee
+owner: akashdatageek
+status: experimental
+claims:
+- localization/localization_common/setup.py
+contract:
+  invariants: []
+  sideEffects: none
+dependencies:
+  calls: []
+  reads: []
+  writes: []
+  config: []
+evals:
+  tier0:
+  - type: invariant_check
+observability:
+  spanName: astrobee.localization.localization_common
+approval:
+  required: false
