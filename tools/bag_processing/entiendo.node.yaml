@@ -1,0 +1,27 @@
+apiVersion: entiendo/v1
+kind: Node
+id: astrobee.tools.bag_processing
+name: bag_processing
+task: 'TODO: state in one sentence what astrobee.tools.bag_processing is for (retrofit
+  inferred this boundary)'
+nodeKind: compute
+group: astrobee
+owner: TODO
+status: experimental
+claims:
+- tools/bag_processing/setup.py
+contract:
+  invariants: []
+  sideEffects: none
+dependencies:
+  calls: []
+  reads: []
+  writes: []
+  config: []
+evals:
+  tier0:
+  - type: invariant_check
+observability:
+  spanName: astrobee.tools.bag_processing
+approval:
+  required: false

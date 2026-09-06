@@ -1,0 +1,34 @@
+# PROPOSED by `ent retrofit` — confidence: medium
+# target: tools/bag_processing/src/bag_processing/entiendo.node.yaml
+# note: no single obvious entrypoint — set contract.entrypoint by hand
+# note: owner, contract, and evals are stubs — review before accepting
+# note: boundary-uncertain: no candidate fixture -> expected verdict yet; supply one before accepting (the law)
+apiVersion: entiendo/v1
+kind: Node
+id: astrobee.tools.bag_processing.src.bag_processing
+name: bag_processing
+task: 'TODO: state in one sentence what astrobee.tools.bag_processing.src.bag_processing
+  is for (retrofit inferred this boundary)'
+nodeKind: compute
+group: astrobee
+owner: TODO
+status: experimental
+claims:
+- tools/bag_processing/src/bag_processing/__init__.py
+- tools/bag_processing/src/bag_processing/analyze_bad_pixels.py
+- tools/bag_processing/src/bag_processing/pixel_utils.py
+contract:
+  invariants: []
+  sideEffects: none
+dependencies:
+  calls: []
+  reads: []
+  writes: []
+  config: []
+evals:
+  tier0:
+  - type: invariant_check
+observability:
+  spanName: astrobee.tools.bag_processing.src.bag_processing
+approval:
+  required: false

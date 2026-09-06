@@ -1,0 +1,31 @@
+# PROPOSED by `ent retrofit` — confidence: high
+# target: scripts/daemon/dock/entiendo.node.yaml
+# note: owner, contract, and evals are stubs — review before accepting
+# note: boundary-uncertain: no candidate fixture -> expected verdict yet; supply one before accepting (the law)
+apiVersion: entiendo/v1
+kind: Node
+id: astrobee.scripts.daemon.dock
+name: dock
+task: 'TODO: state in one sentence what astrobee.scripts.daemon.dock is for (retrofit
+  inferred this boundary)'
+nodeKind: config
+group: astrobee
+owner: TODO
+status: experimental
+claims:
+- scripts/daemon/dock/dock.env
+contract:
+  invariants: []
+  sideEffects: none
+dependencies:
+  calls: []
+  reads: []
+  writes: []
+  config: []
+evals:
+  tier0:
+  - type: invariant_check
+observability:
+  spanName: astrobee.scripts.daemon.dock
+approval:
+  required: false

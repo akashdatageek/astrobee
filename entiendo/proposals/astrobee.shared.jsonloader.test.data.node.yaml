@@ -1,0 +1,35 @@
+# PROPOSED by `ent retrofit` — confidence: high
+# target: shared/jsonloader/test/data/entiendo.node.yaml
+# note: owner, contract, and evals are stubs — review before accepting
+# note: boundary-uncertain: no candidate fixture -> expected verdict yet; supply one before accepting (the law)
+apiVersion: entiendo/v1
+kind: Node
+id: astrobee.shared.jsonloader.test.data
+name: data
+task: 'TODO: state in one sentence what astrobee.shared.jsonloader.test.data is for
+  (retrofit inferred this boundary)'
+nodeKind: config
+group: astrobee
+owner: TODO
+status: experimental
+claims:
+- shared/jsonloader/test/data/inconsistent_waypoints.json
+- shared/jsonloader/test/data/keepout.json
+- shared/jsonloader/test/data/keepout_missing_safe.json
+- shared/jsonloader/test/data/keepout_missing_sequence.json
+- shared/jsonloader/test/data/keepout_wrong_sequence.json
+contract:
+  invariants: []
+  sideEffects: none
+dependencies:
+  calls: []
+  reads: []
+  writes: []
+  config: []
+evals:
+  tier0:
+  - type: invariant_check
+observability:
+  spanName: astrobee.shared.jsonloader.test.data
+approval:
+  required: false

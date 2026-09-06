@@ -1,0 +1,31 @@
+# PROPOSED by `ent retrofit` — confidence: high
+# target: astrobee/gds_configs/IssWorld/entiendo.node.yaml
+# note: owner, contract, and evals are stubs — review before accepting
+# note: boundary-uncertain: no candidate fixture -> expected verdict yet; supply one before accepting (the law)
+apiVersion: entiendo/v1
+kind: Node
+id: astrobee.astrobee.gds_configs.issworld
+name: IssWorld
+task: 'TODO: state in one sentence what astrobee.astrobee.gds_configs.issworld is
+  for (retrofit inferred this boundary)'
+nodeKind: config
+group: astrobee
+owner: TODO
+status: experimental
+claims:
+- astrobee/gds_configs/IssWorld/BookmarksList.json
+contract:
+  invariants: []
+  sideEffects: none
+dependencies:
+  calls: []
+  reads: []
+  writes: []
+  config: []
+evals:
+  tier0:
+  - type: invariant_check
+observability:
+  spanName: astrobee.astrobee.gds_configs.issworld
+approval:
+  required: false
